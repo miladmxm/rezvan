@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'IRAN Sans';
+    src: url('fonts/IRANSans.woff2') format('woff2'),
+        url('fonts/IRANSans.woff') format('woff'),
+        url('fonts/IRANSans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+*{
+    font-family: 'IRAN Sans','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+#root{
+    max-width: 1724px;
+    overflow-x: hidden;
+    margin: auto;
+}

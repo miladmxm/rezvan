@@ -56,14 +56,24 @@
 //     </div>
 //   );
 // };
+// const headerAstop = header.offsetTop
+// window.addEventListener('scroll', () => {
+//   if (window.pageYOffset > headerAstop) {
+//       header.classList.add('stiky')
+//   } else {
+//       header.classList.remove('stiky')
+//   }
+// })
+
 
 // export default App;
 
-
-import React from 'react'
+import "./main.scss";
+import Index from './components/home/index';
 const App = () => {
   return (
     <>
+      <Index />
       
     </>
   )

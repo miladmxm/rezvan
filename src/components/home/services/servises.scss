@@ -1,0 +1,59 @@
+@import "../../mixin.scss";
+.servisesImg{
+    width: 30%;
+    height: 300px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .ditale{
+        @include absloteFit;
+        background-color:#333a;
+        color:#ffffffe0;
+        text-align: justify;
+        opacity: 0;
+        visibility: hidden;
+        transition: all ease-in-out 0.3s;
+        h5{
+            border-bottom: 2px solid #fafafa;
+            color: #fafafa;
+            padding: 10px;
+            transform: translateX(-100%);
+            transition: all ease-in-out 0.3s;
+        }
+        small{
+            line-height: 18px;
+            width: 90%;
+            margin: 5px auto;
+            display: block;
+            transform: translateY(100%);
+            transition: all cubic-bezier(0.77, 0, 0.175, 1) 0.4s;
+        }
+    }
+    input[type="radio"]{
+        appearance: none;
+        -webkit-appearance: none;
+        @include absloteFit;
+        cursor: pointer;
+        &:checked ~ .ditale{
+            visibility: visible;
+            opacity: 1;
+            h5{
+                transform: translateX(0);
+            }
+            small{
+                transform:translateY(0) ;
+            }
+        }
+    }
+}
+p.servisesText{
+    width: 80%;
+    margin: 20px 10px 20px auto;
+    text-align: justify;
+    line-height: 20px;
+}
