@@ -14,7 +14,11 @@
     border: none;
     outline: none;
 }
+body{
+    overflow-x: hidden;
+}
 #root{
     max-width: 1724px;
     margin: auto;
+    position: relative;
 }

@@ -8,11 +8,64 @@ import SliderBlog from "./sliderBlog/sliderBlog"
 import SpecialServises from "./specialServises/specialServises"
 import ShopSlider from "./shopSlider/shopSlider"
 import Footer from "../footer/footer"
+import { useEffect, useRef, useState } from "react"
 const Index = () => {
+    const header = useRef(null)
+    const goToTopEl = useRef(null)
+    const goToLoad = () => {
+        window.scrollBy(0, window.innerHeight + (window.innerHeight / 100) * 3);
+        // console.log(headerStky.current);
+        // headerStky.current.scrollIntoView({ behavior: "smooth" });
+    };
+    const goToTop = () => {
+        header.current.scrollIntoView({ behavior: "smooth" });
+    }
+
+    const shopGoToTop = () => {
+        goToTopEl.current.style.bottom= "25px"
+        goToTopEl.current.style.opacity="0.5"
+        
+    }
+    const hideGoToTop = () => {
+        goToTopEl.current.style.bottom= "-50px"
+        goToTopEl.current.style.opacity="0"
+    }
+    useEffect(() => {
+        // AOS.init({
+        //   duration: 1000,
+        // });
+
+        let lastScrollTop = 0;
+        window.addEventListener(
+            "scroll",
+            function () {
+                // or window.addEventListener("scroll"....
+                const st = window.pageYOffset || document.documentElement.scrollTop;
+                if (st > lastScrollTop) {
+                    shopGoToTop()
+                    if (window.scrollY < 20) {
+                        goToLoad()
+                    }
+                } else {
+                    if (window.scrollY < window.innerHeight) {
+                        hideGoToTop()
+                    }
+                }
+                lastScrollTop = st <= 0 ? 0 : st;
+            },
+            false
+        );
+        return () => {
+            window.removeEventListener("scroll");
+        };
+    }, []);
     return (
         <>
-            <LoginView />
+            <LoginView refEl={header} />
             <Header />
+            <span className="leftBg"></span>
+            <span className="rightBg"></span>
+            <span className={'goToTop'} ref={goToTopEl} onClick={goToTop}><i className="center fa fa-angle-up"></i></span>
             <div className="container">
                 <Slider />
                 <Servises />

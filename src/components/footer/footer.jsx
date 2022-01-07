@@ -7,7 +7,7 @@ const Footer = () => {
             
 
             <div className="row footerColumsContainer">
-                <div className="column">
+                <div className="column item">
                     <h3>باغ گل رضوان</h3>
                     <p className="text-justify">
                         فروشگاه اینترنتی باغ گل رضوان بهترین بستر برای خرید اینترنتی گیاهان مورد نیاز شما در ایران است . “اصل بودن کالا” ،  ” ارسال سریع” و “مشاوره تخصصی” از ویژگی های مهم و اساسی در باغ گل رضوان از نخستین روز تأسیس بوده و تمام سعی خود را کرده تا به آن پایبند باشد . باغ گل رضوان سعی بر آن دارد که روزانه بر تعداد محصولات و تنوع آن بیفزاید تا بتواند نیاز همه ی افراد با هر نوع سلیقه را در خرید محصولات اینترنتی مرتفع کند.
@@ -15,7 +15,7 @@ const Footer = () => {
 تمامی کالاها و خدمات  و فعالیتهای این سایت تابع قوانین و مقررات جمهوری اسلامی ایران می باشد.
                     </p>
                 </div>
-                <div className="column">
+                <div className="column item">
                     <h3>آخرین مقالات</h3>
                     <ul className="weblogItems">
                         <li>
@@ -27,24 +27,24 @@ const Footer = () => {
                         <li>
                             <Link to={"#"}>
                                 <img src="img/16.png" />
-                                <span>هر آنچه باید درباره والیبال بدانید</span>
+                                <span>سلامت پوست در خطر است</span>
                             </Link>
                         </li>
                         <li>
                             <Link to={"#"}>
                                 <img src="img/17.png" />
-                                <span>هر آنچه باید درباره والیبال بدانید</span>
+                                <span>مادر تمام ورزش ها ، دویدن</span>
                             </Link>
                         </li>
                         <li>
                             <Link to={"#"}>
                                 <img src="img/18.png" />
-                                <span>هر آنچه باید درباره والیبال بدانید</span>
+                                <span>لباس های خود را ست کنید</span>
                             </Link>
                         </li>
                     </ul>
                 </div>
-                <div className="column">
+                <div className="column item">
                     <h3>فروشگاه</h3>
                     <ul className="shopLink">
                         <li>
@@ -67,7 +67,7 @@ const Footer = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="column">
+                <div className="column item">
                     <h3>
                         آدرس
                     </h3>
