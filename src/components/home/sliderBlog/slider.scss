@@ -1,0 +1,18 @@
+@import"../../Variabale";
+.containerSliderElements{
+    margin: 30px auto;
+    .item{
+        background-color: $whiteColor;
+        border-radius: 5px;
+        box-shadow: 2px 2px 10px #3333 ;
+        margin: 0 10px;
+        text-align: center;
+        padding: 0 5px 10px 5px;
+        img{
+            border-radius: 5px;
+        }
+        h5{
+            margin: 10px;
+        }
+    }
+}

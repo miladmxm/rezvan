@@ -1,0 +1,42 @@
+@import"../../Variabale";
+.specialServises{
+    align-items: flex-start;
+    .dropBox{
+        height: 0;
+        overflow: hidden;
+        transition: all ease-in-out 0.4s;
+        text-align: justify;
+        background-color: $GreenColor;
+        border-radius:0 0 8px 8px;
+        transform: translateY(-12px);
+        p{
+            color: #fafafae3;
+            padding:15px 10px 10px 10px;
+            line-height: 20px;
+        }
+    }
+    .dropBoxTitle{
+        cursor: pointer;
+        width: 100%;
+        display: flex;
+        margin: 5px 0;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $GreenColor;
+        padding: 10px;
+        color: $whiteColor;
+        border-radius: 8px;
+        .fa-plus{
+            transition: all ease-in-out 0.4s;
+        }
+    }
+    
+    .dropBoxTitle.showBox{
+        .fa-plus{
+            transform: rotate(45deg);
+        }
+    }
+}
+.w-50{
+    width: 49%;
+}
