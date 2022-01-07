@@ -1,0 +1,22 @@
+@import"../../Variabale";
+.shopItem{
+    background-color: $GrayColor;
+    height: 300px;
+    padding: 15px 0 0 0;
+    border-radius: 10px;
+    margin: 0 15px;
+    img{
+        object-fit: cover;
+        width: max-content;
+        height: 77%;
+    }
+    h5{
+        height: calc(23% - 10px);
+        background-color: $blueColor;
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+        margin-top: 10px;
+        color: $whiteColor;
+        border-top: 5px solid $GreenColor;
+    }
+}

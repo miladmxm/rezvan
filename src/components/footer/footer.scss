@@ -1,0 +1,70 @@
+@import"../Variabale";
+
+.footerContainer{
+    .footerCopy{
+        background-color: $FooterColor;
+        color: $whiteColor;
+        padding: 20px;
+    }
+    .footerColumsContainer{
+        background-color: $GrayColor;
+        align-items: flex-start;
+        .column{
+            border-right: 10px solid $bgColor;
+            height: max-content;
+            width: calc(25% - 5px);
+            padding: 10px;
+            &:nth-child(1){
+                border-right: none;
+            }
+            h3{
+                text-align: right;
+                width: 100%;
+                margin: 0 5px 5px 5px;
+
+            }
+
+
+
+            .weblogItems{
+                li{
+                    margin: 5px auto;
+                    width: 100%;
+                    border-radius: 5px;
+                    background-color: $whiteColor;
+                    a{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding:2px 5px;
+                        span{
+                            font-size: 90%;
+                            width: auto;
+                            padding: 5px;
+                            color: $BlackColor
+                        }
+                        img{
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+            }
+
+            .shopLink{
+                width: 100%;
+                padding: 10px;
+                li{
+                    margin:10px;
+                    a{
+                        color: $BlackColor;
+                        font-size: 120%;
+                    }
+                }
+            }
+
+
+        }
+    }
+}

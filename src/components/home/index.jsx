@@ -6,6 +6,8 @@ import Servises from "./services/servises"
 import Portfolio from "./portfolio/portfolio"
 import SliderBlog from "./sliderBlog/sliderBlog"
 import SpecialServises from "./specialServises/specialServises"
+import ShopSlider from "./shopSlider/shopSlider"
+import Footer from "../footer/footer"
 const Index = () => {
     return (
         <>
@@ -17,16 +19,9 @@ const Index = () => {
                 <Portfolio />
                 <SliderBlog />
                 <SpecialServises />
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
+                <ShopSlider />
             </div>
+            <Footer />
         </>
     )
 }
