@@ -30,7 +30,7 @@ const SpecialServises = () => {
 
                 </div>
                 <div className="w-50 top">
-                    <img src="img/19.png" />
+                    <img src="img/19.png" data-aos="zoom-in" data-aos-delay="300" />
                 </div>
             </div>
         </section>

@@ -8,7 +8,10 @@ import SliderBlog from "./sliderBlog/sliderBlog"
 import SpecialServises from "./specialServises/specialServises"
 import ShopSlider from "./shopSlider/shopSlider"
 import Footer from "../footer/footer"
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useRef } from "react"
+import AOS from "aos"
+import "aos/dist/aos.css";
+
 const Index = () => {
     const header = useRef(null)
     const goToTopEl = useRef(null)
@@ -31,9 +34,11 @@ const Index = () => {
         goToTopEl.current.style.opacity="0"
     }
     useEffect(() => {
-        // AOS.init({
-        //   duration: 1000,
-        // });
+        AOS.init({
+            duration: 600,
+            delay: 100,
+            offset:200
+        });
 
         let lastScrollTop = 0;
         window.addEventListener(
