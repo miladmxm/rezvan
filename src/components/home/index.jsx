@@ -11,6 +11,7 @@ import Footer from "../footer/footer"
 import { useEffect, useRef } from "react"
 import AOS from "aos"
 import "aos/dist/aos.css";
+import MobileNav from "../mobileNav/navmobile"
 
 const Index = () => {
     const header = useRef(null)
@@ -34,6 +35,7 @@ const Index = () => {
         goToTopEl.current.style.opacity="0"
     }
     useEffect(() => {
+        header.current.scrollTo(0, 0)
         AOS.init({
             duration: 600,
             delay: 100,
@@ -69,6 +71,7 @@ const Index = () => {
         <>
             <LoginView refEl={header} />
             <Header />
+            <MobileNav />
             <span className="leftBg"></span>
             <span className="rightBg"></span>
             <span className={'goToTop'} ref={goToTopEl} onClick={goToTop}><i className="center fa fa-angle-up"></i></span>

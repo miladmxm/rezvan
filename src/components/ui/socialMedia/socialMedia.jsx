@@ -5,19 +5,19 @@ const SocialMedia = ({ instagram, whatsapp, email, phone, telegram, twitter, you
             <ul className="row socialMedia">
                 {instagram &&
                     <li>
-                        <a href={`https://www.instagram.com/${instagram}`} target={"_blank"}><i className="center fa fa-instagram"></i></a>
+                        <a href={`https://www.instagram.com/${instagram}`} target={"_blank"}><i className="center fab fa-instagram"></i></a>
                     </li>
                 }
                 
                 {whatsapp &&
                     <li>
-                        <a href={`whatsapp://send?phone=${whatsapp}`} target={"_blank"}><i className="center fa fa-whatsapp"></i></a>
+                        <a href={`whatsapp://send?phone=${whatsapp}`} target={"_blank"}><i className="center fab fa-whatsapp"></i></a>
                     </li>
                 }
                 
                 {email &&
                     <li>
-                        <a href={`mailto:${email}`} target={"_blank"}><i className="center fa fa-envelope"></i></a>
+                        <a href={`mailto:${email}`} target={"_blank"}><i className="center fas fa-envelope"></i></a>
                     </li>
                 }
                 
@@ -29,7 +29,7 @@ const SocialMedia = ({ instagram, whatsapp, email, phone, telegram, twitter, you
                 
                 {telegram &&
                     <li>
-                        <a href={telegram} target={"_blank"}><i className="center fa fa-telegram"></i></a>
+                        <a href={telegram} target={"_blank"}><i className="center fab fa-telegram"></i></a>
                     </li>
                 }
                 

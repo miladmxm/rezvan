@@ -18,11 +18,12 @@
         align-items: flex-start;
         @media (max-width: $tabletW) {
             flex-flow: row wrap;
-            height: auto;
+            height: 690px;
         }
         @media (max-width: $mobileW) {
             flex-direction: column;
             height: auto;
+            
         }
         .column.item{
             border-right: 10px solid $bgColor;
@@ -37,6 +38,7 @@
                 width:50%;
                 padding: 10px;
                 border-right: 3px solid $bgColor;
+                height: 50%;
                 &:nth-child(1){
                     border-right: none;
                 }
