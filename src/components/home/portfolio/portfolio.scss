@@ -1,7 +1,15 @@
+@import"../../Variabale";
 .imgController{
     display: block;
     flex-flow: row wrap;
     height: 70vh;
+
+    @media (max-width: $tabletW) {
+        height: 140vh;
+    }
+    @media (max-width: $mobileW) {
+        height: auto;
+    }
     img{
         width: calc(25% - 20px);
         margin: 10px;
@@ -9,5 +17,14 @@
         height: calc(48% - 20px);
         border-radius: 10px;
         cursor: pointer;
+        @media (max-width: $tabletW) {
+            width: calc(50% - 10px);
+            margin: 5px;
+            height: calc(25% - 15px);
+        }
+        @media (max-width: $mobileW) {
+            width: calc(100% - 20px);
+            height: auto;
+        }
     }
 }

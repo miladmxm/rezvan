@@ -37,7 +37,8 @@ const Index = () => {
         AOS.init({
             duration: 600,
             delay: 100,
-            offset:200
+            offset:200,
+            disable:'mobile'
         });
 
         let lastScrollTop = 0;

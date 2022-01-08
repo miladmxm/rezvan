@@ -39,4 +39,8 @@
 }
 .w-50{
     width: 49%;
+    @media (max-width: $tabletW) {
+        width: 100%;
+        margin-bottom: 15px;
+    }
 }

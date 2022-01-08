@@ -1,10 +1,18 @@
 @import "../../mixin.scss";
+@import "../../Variabale";
 .servisesImg{
     width: 30%;
     height: 300px;
     position: relative;
     border-radius: 10px;
     overflow: hidden;
+    @media (max-width: $tabletW) {
+        width: calc(50% - 5px);
+        margin-bottom: 10px;
+    }
+    @media (max-width: $mobileW) {
+        width: 100%;
+    }
     img{
         height: 100%;
         width: 100%;
@@ -56,4 +64,12 @@ p.servisesText{
     margin: 20px 10px 20px auto;
     text-align: justify;
     line-height: 20px;
+    @media (max-width: $tabletW) {
+        width: calc(50% - 5px);
+        margin:0;
+    }
+    @media (max-width: $mobileW) {
+        width: calc(100% - 20px);
+        margin: 10px;
+    }
 }

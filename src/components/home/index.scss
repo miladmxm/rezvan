@@ -1,131 +1,163 @@
 @import "../Variabale";
-.loginView{
+.loginView {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  padding: 0 50px;
+  .imgBack {
     width: 100%;
-    height: 100vh;
-    position: relative;
-    padding: 0 50px;
-    .imgBack{
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: -1;
-        background : {
-            color:$bgColor ;
-            image : url("#{$url}/img/1.png");
-            position: center;
-            size:cover;
-        }
-        box-shadow:inset 100vh 100vw 0 #000000cc;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background : {
+      color: $bgColor;
+      image: url("#{$url}/img/1.png");
+      position: center;
+      size: cover;
     }
-    nav.navIndex{
-        width: 45%;
-        height: 100%;
-        padding: 50px 10px;
-        ul{
-            height: 20%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            li{
-                a{
-                    color: $whiteColor;
-                    font : {
-                        size:160%;
-                        weight: 500;
-                    }
-                    &:hover{
-                        color:$GreenColor;
-                    }
-                    transition: all ease-in-out 0.3s;
-                    -webkit-transition: all ease-in-out 0.3s;
-                    -moz-transition: all ease-in-out 0.3s;
-                    -ms-transition: all ease-in-out 0.3s;
-                    -o-transition: all ease-in-out 0.3s;
-                }
+    box-shadow: inset 100vh 100vw 0 #000000cc;
+  }
+  nav.navIndex {
+    width: 45%;
+    height: 100%;
+    padding: 50px 10px;
+    ul {
+      height: 20%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      li {
+        a {
+          color: $whiteColor;
+          font : {
+            size: 160%;
+            weight: 500;
+          }
+          &:hover {
+            color: $GreenColor;
+          }
+          transition: all ease-in-out 0.3s;
+          @media (max-width: $mobileW) {
+            font : {
+              size: 130%;
+              font-weight: 400;
             }
+          }
         }
-    }
-    .row{
-        height: 50%;
-        justify-content: space-between;
-    }
-    .logo{
-        width: 45%;
-        position: absolute;
-        left: 0;
-        top:0;
-        img.logoimg{
-            position: absolute;
-            top: 10%;
-            left: 5%;
-            width: 65%;
-        }
-    }
-    .column{
-        align-items: flex-start;
-        h1{
-            color:$whiteColor;
-            margin: 10px;
-        }
-        .description{
-            color: $whiteColor;
-            width: 65%;
-            text-align: justify;
-            line-height: 20px;
-        }
+      }
     }
     
-
-}
-.leftBg, .rightBg{
+    @media (max-width: $tabletW) {
+      width: 90%;
+      height: inherit;
+      padding: 0;
+      margin-top: 45%;
+      margin-bottom: 20px;
+    }
+    @media (max-width: $mobileW) {
+      margin-top: 65%;
+      width: 100%;
+    }
+  }
+  .row {
+    height: 50%;
+    justify-content: space-between;
+    @media (max-width: $tabletW) {
+      flex-direction: column;
+      height: auto;
+    }
+  }
+  .logo {
+    width: 45%;
     position: absolute;
-    display: block;
-    height: 100%;
-    top: 0;
-    width: 4%;
     left: 0;
-    z-index: -5;
-    background: {
-        color: transparent;
-        repeat: repeat-y;
-        size: contain;
-        image: url("http://localhost:3000//img/bgL.png"); 
-    };
+    top: 0;
+    @media (max-width: $tabletW) {
+      width: 70%;
+    }
+    @media (max-width: $mobileW) {
+      width: 100%;
+    }
+    
+    img.logoimg {
+      position: absolute;
+      top: 10%;
+      left: 5%;
+      width: 65%;
+    }
+  }
+  .column {
+    align-items: flex-start;
+    h1 {
+      color: $whiteColor;
+      margin: 10px;
+    }
+    .description {
+      color: $whiteColor;
+      width: 65%;
+      text-align: justify;
+      line-height: 20px;
+      @media (max-width: $tabletW) {
+        width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: $tabletW) {
+    padding: 0 10px;
+  }
 }
-.rightBg{
-    left: inherit;
-    right: 0;
-    background: {
-        image:url("http://localhost:3000//img/bgR.png")
-    };
+.leftBg,
+.rightBg {
+  position: absolute;
+  display: block;
+  height: 100%;
+  top: 0;
+  width: 4%;
+  left: 0;
+  z-index: -5;
+  background: {
+    color: transparent;
+    repeat: repeat-y;
+    size: contain;
+    image: url("http://localhost:3000//img/bgL.png");
+  }
 }
-.container{
-    width: 90%;
-    height: auto;
-    margin: 40px auto 0 auto;
+.rightBg {
+  left: inherit;
+  right: 0;
+  background: {
+    image: url("http://localhost:3000//img/bgR.png");
+  }
+}
+.container {
+  width: 90%;
+  height: auto;
+  margin: 40px auto 0 auto;
 }
 
-.goToTop{
-    position: fixed;
-    right: 50px;
-    opacity: 0;
-    bottom: -50px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #444;
-    color: #fff;
-    z-index: 5000000;
-    cursor: pointer;
-    transition: all ease-in-out 0.4s;
-    &:hover{
-        opacity: 0.9 !important;
-    }
-    i,svg{
-        width: 100%;
-        height: 100%; 
-        font-size: 200%;
-    }
+.goToTop {
+  position: fixed;
+  right: 50px;
+  opacity: 0;
+  bottom: -50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #444;
+  color: #fff;
+  z-index: 5000000;
+  cursor: pointer;
+  transition: all ease-in-out 0.4s;
+  &:hover {
+    opacity: 0.9 !important;
+  }
+  i,
+  svg {
+    width: 100%;
+    height: 100%;
+    font-size: 200%;
+  }
 }
