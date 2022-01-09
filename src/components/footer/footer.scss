@@ -104,4 +104,7 @@
 
         }
     }
+    @media (max-width: $navBottom) {
+        padding-bottom:7vh;
+    }
 }

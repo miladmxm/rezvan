@@ -26,7 +26,7 @@ const Header = () => {
                 </nav>
                 <div className="loginAndSearch">
                     <button><i className="fa fa-search"></i></button>
-                    <button><i className="fa fa-sign-in"></i></button>
+                    <button><i className="fas fa-sign-in-alt"></i></button>
                 </div>
             </div>
         </header>

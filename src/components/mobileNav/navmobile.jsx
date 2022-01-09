@@ -6,7 +6,7 @@ const MobileNav = () => {
             <ul className="row">
                 <li><Link to={"#"}><i className="fas fa-phone"></i></Link></li>
                 <li><Link to={"#"}><i className="fas fa-shopping-bag"></i></Link></li>
-                <li><Link to={"#"}><i className="fas fa-home"></i></Link></li>
+                <li className="up"><Link to={"#"}><i className="fas fa-home"></i></Link></li>
                 <li><Link to={"#"}><i className="fas fa-blog"></i></Link></li>
                 <li><Link to={"#"}><i className="fas fa-exclamation"></i></Link></li>
             </ul>

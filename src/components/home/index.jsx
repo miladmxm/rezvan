@@ -26,7 +26,7 @@ const Index = () => {
     }
 
     const shopGoToTop = () => {
-        goToTopEl.current.style.bottom= "25px"
+        goToTopEl.current.style.bottom= "50px"
         goToTopEl.current.style.opacity="0.5"
         
     }

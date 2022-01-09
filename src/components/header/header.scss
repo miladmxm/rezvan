@@ -21,7 +21,7 @@
     }
 
     nav.navIndex {
-        @media (max-width: $mobileW) {
+        @media (max-width: $navBottom) {
             display: none;
           }
       width: 60%;
