@@ -13,21 +13,16 @@
         }
     }
     .footerColumsContainer{
-        height: 300px;
         background-color: $GrayColor;
-        align-items: flex-start;
+        align-items: stretch;
         @media (max-width: $tabletW) {
             flex-flow: row wrap;
-            height: 690px;
         }
         @media (max-width: $mobileW) {
             flex-direction: column;
-            height: auto;
-            
         }
         .column.item{
             border-right: 10px solid $bgColor;
-            height:100%;
             justify-content: flex-start;
             width: calc(25% - 5px);
             padding: 10px;
@@ -38,7 +33,6 @@
                 width:50%;
                 padding: 10px;
                 border-right: 3px solid $bgColor;
-                height: 50%;
                 &:nth-child(1){
                     border-right: none;
                 }
